@@ -1,0 +1,16 @@
+html{
+    background: #8b9dc3;
+}
+h1{
+    font-size: 40px;
+    color:	#3b5998;
+}   
+p{
+    background-color: grey;
+    text-align: center;
+}
+a{
+    display: block;
+    color:yellow;
+    text-align: center;
+}

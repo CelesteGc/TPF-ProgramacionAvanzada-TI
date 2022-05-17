@@ -1,0 +1,46 @@
+<meta charset="UTF-8"/>
+<!-- 
+    Generador de direcciones de email en web HTML:
+
+Hacer una página web con HTML y javascript, dándole estilo con css, 
+que tenga tres Input, uno para el "nombre", otro para el "apellido" y el último 
+para el "servidor de correos electrónicos", junto con un botón y una tabla vacía, 
+con las siguientes columnas "nombre" "apellido" "dirección email". 
+Al apretar el botón los Input quedarán nuevamente vacíos y con los datos obtenidos 
+se creará una dirección de email de la siguiente manera:
+
+"primera letra del nombre" + "apellido" + @ + servidor de correo + .com
+
+Esa dirección de email junto con los otros datos deberán ser guardados en la tabla, 
+se podrá ingresar la cantidad de datos que se deseen en la tabla. 
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Direcciones de email</title>
+    </head>
+    <body>
+        <h1>Generador de direcciones de email en web HTML</h1>
+        <form class="form">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" value=""><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido" value=""><br>
+            <label for="servidor">Servidor de correos electrónicos:</label><br>
+            <input type="text" id="servidor" name="servidor" value=""><br><br>
+            <input type="button" name="Enviar" value="Enviar" onclick="generarMail();">
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Direccion email</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table> 
+        <script src="main.js"></script>
+    </body>
+</html>
