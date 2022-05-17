@@ -1,0 +1,41 @@
+body{background-image:url("fondo.jpg") ;}
+h1{color: rgb(203, 247, 255);
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #000008;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(164, 252, 186);  
+}
+h2{
+    color: rgb(203, 247, 255);
+    text-align: center;
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #000008;
+    
+}
+button{
+    width: 100px;
+    height: 100px;
+    /*background-color: rgb(73, 136, 70);*/
+    
+}
+
+.botones{
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 300px;
+    margin: auto;
+    
+}
+
+.botonReinicio{
+    background-color: rgb(156, 238, 238);
+    font-size: 18px;
+    width: 100px;
+    height: 50px;
+}
+
+table, th,td{
+    border: 1px solid black;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color: rgb(73, 136, 70);
+}
