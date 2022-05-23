@@ -1,4 +1,4 @@
-body{background-image:url("fondo.jpg") ;}
+body{background-image:url("fondo.jpeg") ;}
 h1{color: rgb(203, 247, 255);
     text-align: center;
     text-shadow: 0 0 3px #FF0000, 0 0 5px #000008;
@@ -14,15 +14,17 @@ h2{
 button{
     width: 100px;
     height: 100px;
-    /*background-color: rgb(73, 136, 70);*/
-    
+    background-color: rgb(172, 173, 172);
+    /*background-image: url("./fondobtn.jpeg");*/
 }
-
 .botones{
     display: grid ;
     grid-template-columns: 1fr 1fr 1fr;
     width: 300px;
     margin: auto;
+    /*background-image: url("./fondobtn.jpeg");*/
+    
+    background-color: rgb(172, 173, 172);
     
 }
 
