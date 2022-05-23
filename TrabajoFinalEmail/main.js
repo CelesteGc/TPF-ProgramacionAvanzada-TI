@@ -16,6 +16,7 @@ se podrá ingresar la cantidad de datos que se deseen en la tabla.
 */
 let contador = 0
 let tbodyVar = 0
+let arrayEmails = [];
 function generarTabla(){
     let table = document.createElement('table');
     let thead = document.createElement('thead');
@@ -59,14 +60,26 @@ function generarMail(){
     let nombre = document.getElementById("nombre").value;
     let apellido = document.getElementById("apellido").value;
     let servidor = document.getElementById("servidor").value;
-    let email = `${nombre[0]}${apellido}@${servidor}.com`;
-    console.log(contador);
-    if (contador == 0) {
-        tbodyVar = generarTabla();
-    }
-    agregarDato(nombre,apellido,email,tbodyVar);
-    contador = contador + 1;
-    console.log(contador);
+    if (!(nombre == ""  || apellido == "" || servidor =="")){
+        if (contador == 0) {
+            tbodyVar = generarTabla();
+        }
+        contador = contador + 1;
+        console.log(contador);
+        let email = `${nombre[0]}${apellido}@${servidor}.com`;
+        let incluyeEmail = arrayEmails.includes(email);
+        if (incluyeEmail == true){
+            email = `${nombre[0]}${apellido}${contador}@${servidor}.com`;
+        }else{
+            arrayEmails.push(email);
+        }
+        console.log(incluyeEmail);
+        console.log(arrayEmails);
+        agregarDato(nombre,apellido,email,tbodyVar);
+    }else{
+        alert("Por favor rellena los casilleros con datos válidos");
+    } ;
+
 }
 
 
