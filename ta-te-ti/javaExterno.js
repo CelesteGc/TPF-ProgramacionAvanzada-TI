@@ -11,6 +11,7 @@ const BotonPulsado = (e,posicion) =>{
     console.log(color)
     
     vectorResultado[posicion]=color;
+    btn.disabled = true;
     if (ganador()) {
         if(color == "url('./O2.jpeg')"){
             alert ('Felicitaciones jugador O ha ganado')
@@ -81,6 +82,7 @@ function resetearTablero(){
     let bt = document.querySelectorAll('button');
     console.log(bt);
     for (let i= 0; i < 10; i++){
+        bt[i].disabled= false;
         bt[i].style.backgroundImage=  "url('./boton.jpeg')";
     }
     //bt.style.backgroundImage= "url('./fondobtn.jpeg')";
