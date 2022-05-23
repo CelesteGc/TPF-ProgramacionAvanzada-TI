@@ -75,11 +75,15 @@ function sumarPuntajeVO(val) {
 
 // Ayuda aca con una funcion para resetear el tablero una vez que termina una partida
 function resetearTablero(){
+    console.log("entro reinicio")
     turno=0;
     vectorResultado=[];
-    var bt = document.querySelector('botones');
+    let bt = document.querySelectorAll('button');
+    console.log(bt);
+    for (let i= 0; i < 10; i++){
+        bt[i].style.backgroundImage=  "url('./boton.jpeg')";
+    }
     //bt.style.backgroundImage= "url('./fondobtn.jpeg')";
-    bt.style.backgroundColor=rgb(172, 173, 172)
     console.log(bt);
     }
 
